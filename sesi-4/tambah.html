@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap Demi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Penggajian</a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row nt-2">
+            <h5>Tambah Karyawan</h5>
+            <form action="">
+                <div class="nb-3">
+                    <label for="nik">NIK</label><br>
+                    <input type="text" name="id" id="nik" size="10" maxlength="10" required placeholder="2210010..."
+                        autocomplete="on"><br>
+                </div>
+                <div class="mb-3">
+                    <label for="nama">nama</label><br>
+                    <input type="text" id="nama" required placeholder="Name" autocomplete="on"><br>
+                </div>
+
+                <div class="mb-3">
+                    <label for="tanggal_mulai">Tanggal Mulai</label><br>
+                    <input type="date" name="tanggal_mulai" id="tanggal_mulai"><br>
+                </div>
+
+                <div class="mb-3">
+                    <label for="gaji_pokok">Gaji Pokok</label><br>
+                    <input type="number" name="gaji_pokok" id="gaji_pokok" min="1000000" max="50000000"
+                        step="1000000"><br>
+                </div>
+
+                <div class="mb-3">
+                    <label for="status_karyawan">Status Karyawan</label><br>
+                    <input type="radio" name="status_karyawan" id="tetap" value="TETAP">
+                    <label for="tetap">TETAP</label><br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="radio" name="status_karyawan" id="kontrak" value="KONTRAK">
+                    <label for="kontrak">KONTRAK</label><br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="radio" name="status_karyawan" id="magang" value="MAGANG">
+                    <label for="magang">MAGANG</label><br>
+                </div>
+
+                <button type="submit" class="btn btn-success" id="btn_submit" name="btn_submit" value="submit">
+                    <i class="fa fa-save"></i> submit
+                </button>
+                <button type="reset" class="btn btn-primary" id="btn_reset" name="btn_reset" value="reset">
+                    <i class="fa fa-arrow-rotate"></i> reset
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
